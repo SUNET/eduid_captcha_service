@@ -24,7 +24,7 @@ JSON format
 | background_color.B | 0       | int    | 0..1         |
 | background_color.A | 0       | int    | 0..1         |
 | font_dpi           | 72.0    | float  | 0..1         |
-| char_preset        | ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789 | string | 0..1 |
+| char_preset        | ABCDEFGHIJKLMNOPQRSTUVWXYZ <br> abcdefghijklmnopqrstuvwxyz <br> 0123456789 | string | 0..1 |
 
 
 ### Reply
