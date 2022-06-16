@@ -1,0 +1,6 @@
+*.jpeg
+*.gif
+*.jpg
+tmp/
+bin/
+notes.txt
