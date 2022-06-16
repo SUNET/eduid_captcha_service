@@ -10,7 +10,7 @@ creates a amd64 linux binary
 ### Request
 JSON format
 
-Request:
+#### Request:
 | Value              | Default | Type   | Multiplicity |
 |--------------------|---------|--------|--------------|
 | picture_format     | jpeg    | string | 0..1         |
@@ -35,7 +35,7 @@ JSON format
 | data  | data  | 0..1         |
 | error | error | 0..1         |
 
-data:
+#### data:
 | Value                  | Type    | Description | Multiplicity            |
 |------------------------|---------|--------------|------------------------|
 | text                   | string  | text representation of captcha | 1..1 |
@@ -43,7 +43,7 @@ data:
 | meta                   | Request |                                | 1..1 |
 
 
-error:
+#### error:
 | Value   | Type      | Multiplicity |
 |---------|-----------|--------------|
 | title   | string    | 1..1         |
