@@ -36,8 +36,8 @@ JSON format
 | error | error | 0..1         |
 
 data:
-| Value                  | Type    | Description | Multiplicity |
-|------------------------|---------|--------------|
+| Value                  | Type    | Description | Multiplicity            |
+|------------------------|---------|--------------|------------------------|
 | text                   | string  | text representation of captcha | 1..1 |
 | picture_base64_encoded | string  | base64 encoded picture         | 1..1 |
 | meta                   | Request |                                | 1..1 |
