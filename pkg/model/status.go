@@ -4,19 +4,18 @@ import "time"
 
 var (
 	// StatusOK ok
-	StatusOK = "STATUS_OK_eduid_ladok_"
+	StatusOK = "STATUS_OK_eduid_captcha_service_"
 	// StatusFail not ok
-	StatusFail = "STATUS_FAIL_eduid_ladok_"
+	StatusFail = "STATUS_FAIL_eduid_captcha_service_"
 )
 
 // Status type
 type Status struct {
-	Name       string    `json:"name,omitempty"`
-	SchoolName string    `json:"school_name,omitempty"`
-	Healthy    bool      `json:"healthy,omitempty"`
-	Status     string    `json:"status,omitempty"`
-	Message    string    `json:"message,omitempty"`
-	Timestamp  time.Time `json:"timestamp,omitempty"`
+	Name      string    `json:"name,omitempty"`
+	Healthy   bool      `json:"healthy,omitempty"`
+	Status    string    `json:"status,omitempty"`
+	Message   string    `json:"message,omitempty"`
+	Timestamp time.Time `json:"timestamp,omitempty"`
 }
 
 // ManyStatus contains many status objects
