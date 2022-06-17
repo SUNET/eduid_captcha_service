@@ -2,15 +2,27 @@
     "cSpell.words": [
         "apiv",
         "cristalhq",
+        "Debugw",
         "eduid",
         "envconfig",
+        "Errorw",
+        "Fatalw",
+        "gonic",
         "httpserver",
         "indata",
+        "Infow",
+        "kelseyhightower",
+        "ladok",
         "mcuadros",
         "Middlewares",
         "MIMEJSON",
+        "moogar",
         "oneof",
         "steambap",
-        "sunet"
+        "stretchr",
+        "sunet",
+        "Warnw",
+        "zapcore",
+        "zaptest"
     ]
 }
