@@ -22,43 +22,10 @@ eduid:
     ladok-x:
       api_server:
         host: :8080
-    ladok:
+    captcha:
       api_server:
         host: :8080
       production: false
-      tracing:
-        kind: jaeger
-        endpoint: "http://localhost:14268/api/traces"
-      schools:
-        kf: 
-          saml_name: student.konstfack.se
-        lnu:
-          saml_name: lnu.se 
-      ladok:
-        url: https://api.integrationstest.ladok.se
-        certificate:
-          folder: cert
-        atom:
-          periodicity: 60 
-        permissions:
-          90019: "rattighetsniva.las"
-          51001: "rattighetsniva.las"
-          61001: "rattighetsniva.las"
-          11004: "rattighetsniva.las"
-          860131: "rattighetsniva.las"
-      eduid:
-        iam:
-          url: https://api.dev.eduid.se/scim/test 
-      sunet:
-        auth:
-          url: https://auth-test.sunet.se 
-      redis:
-        db: 3
-        host: localhost:6379
-        sentinel_hosts:
-        #  - localhost:1231
-        #  - localhost:12313
-        sentinel_service_name: redis-cluster
     x_service:
       api_server:
         host: 8080
