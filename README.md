@@ -4,6 +4,8 @@
 creates a amd64 linux binary
 
 ### Run
+`$ export EDUID_CONFIG_YAML=dev_config.yaml`
+
 `$ ./bin/eduid_captcha_service`
 
 ## Fetch captcha

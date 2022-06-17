@@ -3,7 +3,6 @@ package httpserver
 import (
 	"context"
 	"eduid_captcha_service/internal/apiv1"
-	"eduid_captcha_service/pkg/helpers"
 
 	"github.com/gin-gonic/gin"
 )
@@ -12,10 +11,6 @@ func (s *Service) endpointGetCaptcha(ctx context.Context, c *gin.Context) (inter
 	request := &apiv1.RequestGetCaptcha{}
 
 	if err := s.bindRequest(c, request); err != nil {
-		return nil, err
-	}
-
-	if err := helpers.Check(request); err != nil {
 		return nil, err
 	}
 
