@@ -20,10 +20,10 @@ type RequestGetCaptcha struct {
 	} `json:"picture_size"`
 	Noise           float64 `json:"noise" default:"4"`
 	BackgroundColor struct {
-		R uint8 `json:"R" default:"0"`
-		G uint8 `json:"G" default:"0"`
-		B uint8 `json:"B" default:"0"`
-		A uint8 `json:"A" default:"0"`
+		R uint8 `json:"R"`
+		G uint8 `json:"G"`
+		B uint8 `json:"B"`
+		A uint8 `json:"A"`
 	} `json:"background_color"`
 	TextLength  int     `json:"text_length" default:"4"`
 	CurveNumber int     `json:"curve_number" default:"2"`
