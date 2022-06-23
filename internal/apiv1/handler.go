@@ -33,9 +33,9 @@ type RequestGetCaptcha struct {
 
 // ReplyGetCaptcha
 type ReplyGetCaptcha struct {
-	Text                 string             `json:"text"`
-	PictureBase64Encoded string             `json:"picture_base64_encoded"`
-	Meta                 *RequestGetCaptcha `json:"meta"`
+	Text  string             `json:"text"`
+	Image string             `json:"image"`
+	Meta  *RequestGetCaptcha `json:"meta"`
 }
 
 // GetCaptcha handler
@@ -75,9 +75,9 @@ func (c *Client) GetCaptcha(ctx context.Context, indata *RequestGetCaptcha) (*Re
 	}
 
 	return &ReplyGetCaptcha{
-		Text:                 data.Text,
-		PictureBase64Encoded: base64.StdEncoding.EncodeToString(w.Bytes()),
-		Meta:                 indata,
+		Text:  data.Text,
+		Image: base64.StdEncoding.EncodeToString(w.Bytes()),
+		Meta:  indata,
 	}, nil
 }
 
