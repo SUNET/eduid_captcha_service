@@ -51,7 +51,7 @@ JSON format
 | Value | Type    | Description                    | Multiplicity |
 |-------|---------|--------------------------------|--------------|
 | text  | string  | text representation of captcha | 1..1         |
-| image | string  | base64 encoded picture         | 1..1         |
+| image | string  | base64 encoded image           | 1..1         |
 | meta  | Request |                                | 1..1         |
 
 

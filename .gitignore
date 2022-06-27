@@ -4,4 +4,5 @@
 tmp/
 bin/
 notes.txt
-.vscode/*.log
+.vscode/*
+!.vscode/settings.json
