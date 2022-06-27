@@ -1,8 +1,0 @@
-make --dry-run --always-make --keep-going --print-directory
-make: Entering directory '/home/masv/git/eduid_captcha_service'
- 
-echo building-static
-CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -v -o ./bin/eduid_captcha_service -ldflags "-w -s --extldflags '-static'" ./cmd/main.go
-echo Done
-make: Leaving directory '/home/masv/git/eduid_captcha_service'
- 
